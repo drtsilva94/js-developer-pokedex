@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
 
-    <!-- Normalize CSS -->
+    <!-- Normalize CSS para uniformizar estilos em diferentes navegadores -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,13 +23,20 @@
 </head>
 
 <body>
+
+    <!-- Overlay para escurecer o fundo quando o card de detalhes está visível -->
+    <div id="overlay" class="overlay hidden"></div>
+
+    <!-- Conteúdo principal da Pokedex -->
     <section class="content">
         <h1>Pokedex</h1>
 
+        <!-- Lista de Pokémon -->
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
         </ol>
 
+        <!-- Botão para carregar mais Pokémon -->
         <div class="pagination">
             <button id="loadMoreButton" type="button">
                 Load More
@@ -37,10 +44,31 @@
         </div>
     </section>
 
-    <!-- Nosso JS -->
+    <!-- Seção de detalhes do Pokémon -->
+    <section id="pokemonDetail" class="pokemonDetail hidden">
+        <div class="pokemon-card">
+            <div class="pokemon-header">
+                <!-- Imagem e informações principais do Pokémon -->
+                <img id="pokemonDetailImage" src="" alt="Imagem do Pokémon">
+                <h2 id="pokemonDetailName"></h2>
+                <span id="pokemonDetailNumber" class="pokemon-number"></span>
+            </div>
+            <div class="pokemon-info">
+                <!-- Informações detalhadas do Pokémon -->
+                <p><strong>Type(s):</strong> <span id="pokemonDetailTypes"></span></p>
+                <p><strong>Height:</strong> <span id="pokemonDetailHeight"></span> m</p>
+                <p><strong>Weight:</strong> <span id="pokemonDetailWeight"></span> kg</p>
+                <p><strong>Abilities:</strong> <span id="pokemonDetailAbilities"></span></p>
+            </div>
+            <button id="backToList">Back to List</button>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
-</body>
 
+    
+</body>
 </html>

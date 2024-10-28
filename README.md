@@ -2,7 +2,7 @@
 
 ![Bulbasaur](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png)
 
-Este é um projeto de Pokedex criado para exibir uma lista de Pokémon com detalhes de cada um. A aplicação permite ao usuário navegar por uma lista de Pokémon, visualizar detalhes de cada um e carregar mais Pokémon dinamicamente.
+Este é um projeto de uma Pokédex simples, desenvolvido como parte do curso de Desenvolvimento Fullstack da DIO. A aplicação permite ao usuário navegar por uma lista de Pokémon, visualizar detalhes de cada um e carregar mais Pokémon dinamicamente.
 
 ## Tecnologias Utilizadas
 
@@ -32,3 +32,16 @@ Este é um projeto de Pokedex criado para exibir uma lista de Pokémon com detal
 │   │   └── pokemon-model.js # Modelo para estrutura dos dados de cada Pokémon
 │   └── img/              # Imagens e ícones (se necessário)
 └── README.md             # Documentação do projeto
+
+
+
+## Como Rodar o Projeto
+
+### Pré-requisitos
+
+Para rodar o projeto localmente, é necessário ter um servidor local simples, como o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) no VSCode ou rodar um servidor com Python.
+
+### Clonar o repositório
+
+```bash
+git clone https://github.com/seu-usuario/pokedex.git

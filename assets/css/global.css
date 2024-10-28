@@ -1,10 +1,15 @@
+/* Configurações globais de fonte, margens e espaçamentos */
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #f6f8fc;
+    color: #333;
+    line-height: 1.6;
 }
 
 .content {
@@ -12,13 +17,39 @@ body {
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
+    max-width: 992px;
+    margin: 1rem auto;
+    border-radius: 1rem;
 }
 
-@media screen and (min-width: 992px) {
-    .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
-    }
+/* Classe para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Overlay para escurecer o fundo */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+}
+
+/* Botões gerais */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5966b1;
 }
