@@ -35,13 +35,3 @@ Este é um projeto de uma Pokédex simples, desenvolvido como parte do curso de 
 
 
 
-## Como Rodar o Projeto
-
-### Pré-requisitos
-
-Para rodar o projeto localmente, é necessário ter um servidor local simples, como o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) no VSCode ou rodar um servidor com Python.
-
-### Clonar o repositório
-
-```bash
-git clone https://github.com/seu-usuario/pokedex.git
